@@ -1,14 +1,11 @@
 import React from "react";
-
+import { useParams } from 'react-router'
   
-  const Hola = props => {
-  
-    const hello = props.match.params.hello;
+ function Hola() {
+    const {message} = useParams();
     return (
-        <>
-          {!isNaN(hello) && <h3>The word is: {hello}</h3> }
-        </>
-      )
-    }
+        <div>{`${message}`}</div>
+    )
+}
    
   export default Hola;
