@@ -1,11 +1,10 @@
 import React from "react";
-
-const Numero = props => {
-  const number = props.match.params.number
-  return (
-    <>
-      {!isNaN(number)  (<h3>Numero: {number}</h3>) }
-    </>
-  )
+import { useParams } from 'react-router'
+function Number() {
+    const {number} = useParams();
+    return (
+        <div>{`Number is ${isNaN(number) ? 'Not Number' : number}`}</div>
+    )
 }
+
 export default Numero;
