@@ -16,9 +16,9 @@ function App() {
 
       <Routes>
         <Route path="/home"><Casa /></Route>
-        <Route path="/number/:number" render={(routeProps) => <Numero {...routeProps} />} />
-        <Route path="/:hello/:color/:background" render={(routeProps) => <Hola {...routeProps} />} />
-        <Route path="/:hello" render={(routeProps) => <Holacolor {...routeProps} />} />
+        <Route path="/number/:number" render={(routeProps) => <Numero />} />
+        <Route path="/:hello/:color/:background" render={(routeProps) => <Hola  />} />
+        <Route path="/:hello/:message" render={(routeProps) => <Holacolor  />} />
       </Routes>
 
     </BrowserRouter>
